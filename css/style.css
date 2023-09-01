@@ -1,3 +1,80 @@
+/* Cambios generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+/* Barra de navegación y botón */   
+.containerMenu, header div {
+    display: none;
+}
+
+/* Botón Contact */
+.btnContact {
+    width: 134px;
+    height: 44px;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+
 body {
-    font-family: , Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@media(min-width:768px) {
+
+    header {
+        justify-content: space-between;
+    }
+    
+    header div {
+        display: flex;
+    }
+
+    /* Barra de navegación */   
+    .containerMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuHeader {
+        width: 450px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menuHeader li {
+        list-style-type: none;
+    }
+
+    .menuHeader li a {
+        text-decoration: none;
+        color: #242E52;
+        font-size: 13px;
+    }
+
+    .menuHeader li a:hover {
+        color: rgba(36, 46, 82, 0.6);
+    }
+
+    /* Menu Hamburguesa */
+    #menuBurger {
+        display: none;
+    }
 }
