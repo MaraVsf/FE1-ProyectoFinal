@@ -28,13 +28,57 @@ header {
     font-size: 13px;
 }
 
+/* Footer */
+footer {
+    background-color: #1E1E26;
+}
 
+footer p {
+    color: #8C8C94;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.containerIntro {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
 
+.contentIntro {
+    text-align: right;
+    margin-top: 60px;
+}
+
+.contentIntro h1 {
+    font-size: 50px;
+}
+
+.contentIntro p {
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+}
+
+#containerWhat {
+    display: flex;
+    flex-direction: column;
+    background-color: #06a4b0;
+    color: #FFFFFF;
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+}
+
+#containerWhat h2 {
+    margin: 20px 0px 20px 0px;
+    font-size: 36px;
+}
+
+#containerWhat p {
+    margin: 20px 0px 20px 0px;
+    font-size: 16px;
+}
 
 @media(min-width:768px) {
 
@@ -76,5 +120,28 @@ body {
     /* Menu Hamburguesa */
     #menuBurger {
         display: none;
+    }
+
+    .containerIntro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+    }
+
+    #containerWhat {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #containerWhat h2 {
+        margin: 0px 20px 0px 20px;
+        width: 1100px;
+    }
+    
+    #containerWhat p {
+        margin: 0px 20px 0px 20px;
+        width: 600px;
     }
 }
