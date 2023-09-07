@@ -1,3 +1,214 @@
+/* Cambios generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+
+/* Barra de navegación y botón */
+.containerMenu,
+header div {
+    display: none;
+}
+
+/* Botón Contact */
+.btnContact {
+    width: 134px;
+    height: 44px;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Footer */
+footer {
+    background-color: #1E1E26;
+}
+
+footer p {
+    color: #8C8C94;
+}
+
 body {
-    font-family: , Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.containerIntro {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contentIntro {
+    text-align: right;
+    margin-top: 60px;
+    width: fixed;
+}
+
+.contentIntro h1 {
+    font-size: 50px;
+    color: #232C50;
+
+}
+
+.contentIntro p {
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+}
+
+#containerWhat {
+    display: flex;
+    flex-direction: column;
+    background-color: #52eaf5;
+    color: #FFFFFF;
+    margin: 20px 0px 20px 0px;
+    padding: 40px 40px;
+    align-items: center;
+
+}
+
+#containerWhat h2 {
+    font-size: 36px;
+    text-align: left;
+
+}
+
+#containerWhat p {
+    margin: 20px 0px 20px 0px;
+    font-size: 16px;
+    text-align: left;
+}
+
+#featuresSection div.feature div.numbers {
+    background-color: #8B48BF;
+    font-weight: 600;
+    display: inline;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 50px;
+
+}
+
+#featuresSection div.feature div.featureTitle {
+    background-color: rgba(139, 72, 191, 0.3);
+    padding: 8px;
+    padding-left: 0px;
+    border-radius: 50px 0px 0px 50px;
+    margin-left: 20px;
+}
+
+#featuresSection div.feature h3 {
+    display: inline;
+    color: #323851;
+    font-size: 16px;
+}
+
+#featuresSection div.feature p {
+    color: #B3B2B7;
+    padding: 15px;
+    padding-left: 44px;
+}
+
+#bestOfTheMonth {
+    position: relative;
+}
+
+#bestOfTheMonth h2 {
+    padding: 58px 72px 74px 74px;
+
+}
+
+#bestOfTheMonth img {
+    height: 70px;
+    width: 70px;
+    position: relative;
+}
+
+#bestOfTheMonth div {
+    margin: 58px 72px 74px 74px;
+    ;
+    padding: 27px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media(min-width:768px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    header div {
+        display: flex;
+    }
+
+    /* Barra de navegación */
+    .containerMenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuHeader {
+        width: 450px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menuHeader li {
+        list-style-type: none;
+    }
+
+    .menuHeader li a {
+        text-decoration: none;
+        color: #242E52;
+        font-size: 13px;
+    }
+
+    .menuHeader li a:hover {
+        color: rgba(36, 46, 82, 0.6);
+    }
+
+    /* Menu Hamburguesa */
+    #menuBurger {
+        display: none;
+    }
+
+    .containerIntro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+    }
+
+    #containerWhat {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    #containerWhat h2 {
+        margin: 0px 20px 0px 20px;
+        width: 1100px;
+    }
+
+    #containerWhat p {
+        margin: 0px 50px 0px 20px;
+        width: 600px;
+    }
+
 }
