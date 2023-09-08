@@ -12,9 +12,10 @@ header {
     margin: 30px;
 }
 
+
 /* Barra de navegación y botón */
 .containerMenu,
-header div {
+header div {/* Nuevos Cambios Miguel */ 
     display: none;
 }
 
@@ -42,8 +43,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 .containerIntro {
     display: flex;
     flex-direction: column;
@@ -53,13 +52,12 @@ body {
 .contentIntro {
     text-align: right;
     margin-top: 60px;
-    width: fixed;
+    width: fixed; /* Nuevos Cambios Miguel */ 
 }
 
 .contentIntro h1 {
     font-size: 50px;
-    color: #232C50;
-
+    color: #232C50;  /* Nuevos Cambios Miguel */ 
 }
 
 .contentIntro p {
@@ -70,6 +68,7 @@ body {
 #containerWhat {
     display: flex;
     flex-direction: column;
+/* Nuevos Cambios Miguel */ 
     background-color: #3CDDF3;
     color: #FFFFFF;
     margin: 20px 0px 20px 0px;
@@ -181,7 +180,6 @@ body {
     header {
         justify-content: space-between;
     }
-
     header div {
         display: flex;
     }
@@ -228,6 +226,7 @@ body {
 
     #containerWhat {
         flex-direction: row;
+/* Nuevos Cambios Miguel */ 
         justify-content: space-between;
         background-color: #8B48BF;
     }
