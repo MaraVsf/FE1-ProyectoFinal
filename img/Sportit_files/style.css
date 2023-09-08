@@ -1,5 +1,3 @@
-/* Cambios generales */
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 /* Estilos fonts
@@ -7,6 +5,7 @@ font-family: 'Bebas Neue', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 
+/* Cambios generales */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,12 +17,51 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    margin: 50px;
+}
+
+.logo {
+    width: 107px;
 }
 
 /* Barra de navegación y botón */   
 .containerMenu, header div {
     display: none;
+}
+
+/* Main*/
+
+/* Encabezado principal */
+.containerIntro {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.containerIntro img {
+    margin: 10px;
+    width: 400px;
+    height: 341px;
+}
+
+.contentIntro {
+    text-align: right;
+    margin: 60px 0px 0px 25px;
+    width: 400px;
+}
+
+.contentIntro h1 {
+    font-size: 50px;
+    color: #232C50;
+    font-weight: 700;
+    line-height: 57px;
+}
+
+.contentIntro p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0px 30px 0px;
+    line-height: 26px;
 }
 
 /* Botón Contact */
@@ -35,39 +73,10 @@ header {
     border: none;
     border-radius: 20px;
     font-size: 13px;
+    font-weight: 500;
 }
 
-/* Encabezado principal */
-.containerIntro {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
-
-.logo {
-    width: 107px;
-}
-
-.containerIntro .logo {
-    width: 400px;
-}
-
-.contentIntro {
-    text-align: right;
-    margin-top: 60px;
-    width: 400px;
-}
-
-.contentIntro h1 {
-    font-size: 50px;
-    color: #232C50;
-}
-
-.contentIntro p {
-    font-size: 16px;
-    margin: 20px 0px 20px 0px;
-}
-
+/* Container What */
 #containerWhat {
     display: flex;
     flex-direction: column;
@@ -80,11 +89,13 @@ header {
 #containerWhat h2 {
     margin: 20px 0px 20px 0px;
     font-size: 36px;
+    line-height: 41.26px;
 }
 
 #containerWhat p {
-    margin: 20px 0px 20px 0px;
+    margin: 30px 50px 20px 0px;
     font-size: 16px;
+    font-weight: 500;
 }
 
 /* Pre Footer */
@@ -92,7 +103,27 @@ header {
     background-color: #3CDDF3;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 70px 40px 70px;
+    align-items: center;
+}
+
+#preFoot h2 {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 47.84px;
+    font-size: 40px;
+    width: 393px;
+    height: 96px;
+}
+
+#goForIt {
+    width: 134px;
+    height: 44px;
+    background-color: #232C50;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.25);
 }
 
 /* Footer */
@@ -103,6 +134,10 @@ footer {
     align-items: center;
     padding: 20px;
     color: #8C8C94;
+}
+
+footer p {
+    font-size: 12.5px;
 }
 
 /* Formulario */
@@ -116,20 +151,28 @@ form {
     border: none;
     border-radius: 20px;
     font-size: 13px;
+    margin: 5px;
+}
+
+#email::placeholder {
+    font-weight: 600;
+    color: #A0A0A0;
+    padding-left: 10px;
 }
 
 /* Botón Go */
 #btnGo {
     width: 63px;
-    height: 44px;
+    height: 42px;
     background-color: #8B48BF;
     color: #FFFFFF;
     border: none;
     border-radius: 20px;
     font-size: 13px;
+    font-weight: 500;
 }
 
-/* Footer Nav */
+/* Navegación Footer */
 footer div {
     display: flex;
     width: 344px;
@@ -172,12 +215,18 @@ footer div {
 
 @media(min-width:768px) {
 
+    /* Header */
     header {
         justify-content: space-between;
+        margin: 50px 150px 50px 150px;
     }
     
     header div {
         display: flex;
+    }
+
+    header .btnContact {
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.25);
     }
 
     /* Barra de navegación */   
@@ -201,6 +250,7 @@ footer div {
         text-decoration: none;
         color: #242E52;
         font-size: 13px;
+        font-weight: 500;
     }
 
     .menuHeader li a:hover {
@@ -212,45 +262,109 @@ footer div {
         display: none;
     }
 
+    /* Main*/
+
+    /* Encabezado principal */
     .containerIntro {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        margin: 50px;
+        padding: 80px 100px 80px 140px;
     }
 
+    .contentIntro {
+        width: 500px;
+    }
+
+    .containerIntro img {
+        width: 540px;
+        height: 461px;
+    }
+
+    /* Container What */
     #containerWhat {
         flex-direction: row;
         justify-content: center;
         background-color: #8B48BF;
-        padding: 50px 80px 50px 80px;
-        align-self: center;
-    }
-
-    #containerWhat h2, #containerWhat p {
-        margin: 0px;
-        padding: 0px;
     }
 
     #containerWhat h2 {
         width: 500px;
+        margin: 40px;
     }
 
     #containerWhat p {
         width: 450px;
+        margin: 40px;
     }
 
     /* Pre Footer */
     #preFoot {
-        background-color: #8B48BF;
         flex-direction: row;
+        justify-content: center;
+        background-color: #8B48BF;
     }
+
+    #preFoot h2 {
+        text-align: left;
+        width: 393px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #goForIt {
+        color: #8B48BF;
+        background-color: #FFFFFF;
+    }
+
+    /* #preFoot {
+        background-color: #3CDDF3;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 70px 40px 70px;
+        align-items: center;
+    }
+    
+    #preFoot h2 {
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 47.84px;
+        font-size: 40px;
+        width: 324px;
+        height: 192px;
+    }
+    
+    #goForIt {
+        width: 134px;
+        height: 44px;
+        background-color: #232C50;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.25);
+    } */
 
     /* Footer */
     footer {
         flex-direction: row-reverse;
-        padding: 20px;
+        position: relative;
+        justify-content: space-around;
+        padding: 50px 0px 50px 0px;
+    }
+
+    footer p {
+        position: absolute;
+        right: 50px;
+        bottom: 40px;
+    }
+
+    /* Formulario */
+    form {
+        align-self: self-start;
+        margin: 10px;
+    }
+
+    #email {
+        width: 201px;
     }
 
     /* Container Redes y Logo */
@@ -260,10 +374,11 @@ footer div {
 
     .containerDoble .logo {
         align-self: self-start;
+        margin-bottom: 60px;
     }
     
     /* Redes */
     .containerRedes a {
-        margin: 5px;
+        margin: 15px 5px 5px 5px;
     }
 }
