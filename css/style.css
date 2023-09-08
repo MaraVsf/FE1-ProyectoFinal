@@ -21,8 +21,10 @@ header {
     margin: 30px;
 }
 
-/* Barra de navegación y botón */   
-.containerMenu, header div {
+
+/* Barra de navegación y botón */
+.containerMenu,
+header div {/* Nuevos Cambios Miguel */ 
     display: none;
 }
 
@@ -55,12 +57,12 @@ header {
 .contentIntro {
     text-align: right;
     margin-top: 60px;
-    width: 400px;
+    width: fixed; /* Nuevos Cambios Miguel */ 
 }
 
 .contentIntro h1 {
     font-size: 50px;
-    color: #232C50;
+    color: #232C50;  /* Nuevos Cambios Miguel */ 
 }
 
 .contentIntro p {
@@ -71,20 +73,111 @@ header {
 #containerWhat {
     display: flex;
     flex-direction: column;
+/* Nuevos Cambios Miguel */ 
     background-color: #3CDDF3;
     color: #FFFFFF;
     margin: 20px 0px 20px 0px;
-    padding: 20px;
+    padding: 40px 70px;
+    align-items: center;
+
 }
 
-#containerWhat h2 {
-    margin: 20px 0px 20px 0px;
+#containerWhat .leftSide {
     font-size: 36px;
+    text-align: left;
+    width: 50%;
 }
 
-#containerWhat p {
+#containerWhat .rightSide {
     margin: 20px 0px 20px 0px;
     font-size: 16px;
+    text-align: left;
+    width: 50%;
+}
+
+#featuresSection div.feature div.numbers {
+    background-color: #8B48BF;
+    font-weight: 600;
+    display: inline;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 50px;
+
+}
+
+#featuresSection div.feature div.featureTitle {
+    background-color: rgba(139, 72, 191, 0.3);
+    padding: 8px;
+    padding-left: 0px;
+    border-radius: 50px 0px 0px 50px;
+    margin-left: 20px;
+}
+
+#featuresSection div.feature h3 {
+    display: inline;
+    color: #323851;
+    font-size: 16px;
+}
+
+#featuresSection div.feature p {
+    color: #B3B2B7;
+    padding: 28px;
+}
+
+#bestOfTheMonth {
+    padding-bottom: 70px;
+}
+
+#bestOfTheMonth h2 {
+    text-align: center;
+    color: #242E53;
+}
+
+#bestOfTheMonth img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: -40px;
+}
+
+#bestOfTheMonth div {
+    margin: 58px 72px 74px 74px;
+    padding: 27px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+}
+
+#bestOfTheMonth .hideCard {
+    display: none;
+}
+
+#bestOfTheMonth h4 {
+    padding: 21px 0px 21px 0px;
+    color: #3F4868;
+}
+
+#bestOfTheMonth p {
+    text-align: center;
+    color: #B9B9C1;
+}
+
+
+#moreButton {
+    width: 134px;
+    height: 44px;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
 
 /* Pre Footer */
@@ -170,17 +263,16 @@ footer div {
     margin: 30px;
 }
 
-@media(min-width:768px) {
+@media(min-width: 768px) {
 
     header {
         justify-content: space-between;
     }
-    
     header div {
         display: flex;
     }
 
-    /* Barra de navegación */   
+    /* Barra de navegación */
     .containerMenu {
         display: flex;
         justify-content: space-between;
@@ -222,7 +314,9 @@ footer div {
 
     #containerWhat {
         flex-direction: row;
-        justify-content: center;
+/* Nuevos Cambios Miguel */ 
+        justify-content: space-between;
+        background-color: #8B48BF;
         background-color: #8B48BF;
         padding: 50px 80px 50px 80px;
         align-self: center;
@@ -234,10 +328,60 @@ footer div {
     }
 
     #containerWhat h2 {
-        width: 500px;
+        margin: auto;
+        width: auto;
+        margin-right: 100px;
+        font-size: 36px;
     }
 
     #containerWhat p {
+        margin: -10px;
+        width: -10px;
+        font-size: 16px;
+    }
+
+    #featuresSection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 70px;
+        background-color: #FAFAFA;
+    }
+
+    #featuresSection .feature {
+        max-width: 600px;
+        min-width: 370px;
+    }
+
+    #featuresSection .featureFirstLine {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #featuresSection div.feature div.featureTitle {
+        background-color: transparent;
+        margin-top: 40px;
+    }
+
+}
+
+#TitleBestOfTheMonth {
+    text-align: center;
+    margin-bottom: 40px;
+}
+#bestOfTheMonth {
+    display: flex;
+}
+
+#bestOfTheMonth .hideCard {
+    display: flex;
+}
+
+#moreButton {
+    display: none;
+}
         width: 450px;
     }
 

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sportit</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <!-- Logo -->
@@ -25,68 +27,102 @@
         <div>
             <button class="btnContact">Contact</button>
         </div>
-        
+      
+     <!-- Nuevos Cambios Miguel -->
+
         <!-- Menu Hamburguesa -->
-        <img src="img/icon-hamburger.svg" alt="Menu Burger" id="menuBurger" >
-        
+        <img src="img/icon-hamburger.svg" alt="Menu Burger" id="menuBurger">
+
     </header>
 
     <main>
 
         <!-- Encabezado principal -->
-        <section class="containerIntro"> 
-            <img src="img/padel-intro.png" alt="Padel Intro">
-
+        <section class="containerIntro">
+            <img id="principalImg" src="img/padel-intro.png" alt="Padel Intro">
+          
+     <!-- Fin Nuevos Cambios Miguel --> 
             <article class="contentIntro">
                 <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-                <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
+                <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!
+                </p>
                 <button class="btnContact">Contact</button>
             </article>
         </section>
   
         <!-- Container What -->
         <section id="containerWhat">
-            <h2>What's different between pros?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus earum dolores esse neque officiis unde veritatis quaerat. Veritatis, excepturi aut magni maxime aliquam ipsam officiis sapiente illum, corporis dolores eos.</p>
+
+        <!-- Nuevos Cambios Miguel -->
+            <div class="leftSide">
+                <h2>What's different between pros?</h2>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At dolor ipsum possimus impedit quos
+                 perferendis veritatis, vel illum adipisci inventore? Praesentium in sint velit corporis, quibusdam
+                necessitatibus neque sit quaerat!</p>
+            </div>
+          <!-- Fin Nuevos Cambios Miguel --> 
         </section>
 
-        <!-- Container Cards -->
-        <section>
-            <article>
-                <h4>Track company-wide progress</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae error, vero natus labore optio officia omnis asperiores explicabo? Eos fugiat maiores a eveniet vero vitae, voluptas velit ipsa rem ullam!</p>
-            </article>
-            <article>
-                <h4>Advance built-in reports</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae error, vero natus labore optio officia omnis asperiores explicabo? Eos fugiat maiores a eveniet vero vitae, voluptas velit ipsa rem ullam!</p>
-            </article>
-            <article>
-                <h4>everything you need is a place</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae error, vero natus labore optio officia omnis asperiores explicabo? Eos fugiat maiores a eveniet vero vitae, voluptas velit ipsa rem ullam!</p>
-            </article>
+        <section id="featuresSection">
+            <div class="featureFirstLine">
+                <div class="feature">
+                    <div class="featureTitle">
+                        <div class="numbers">1</div>
+                        <h3>Track company-wide progress</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, quod. Aliquam
+                        exercitationem obcaecati error! Molestiae minus nostrum quo natus, consequatur blanditiis est.
+                        Mollitia maiores dolorem est placeat modi, nobis tenetur.</p>
+                </div>
+                <div class="feature">
+                    <div class="featureTitle">
+                        <div class="numbers">2</div>
+                        <h3>Advance built-in reports</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, quod. Aliquam
+                        exercitationem obcaecati error! Molestiae minus nostrum quo natus, consequatur blanditiis est.
+                        Mollitia maiores dolorem est placeat modi, nobis tenetur.</p>
+                </div>
+            </div>
+            <div class="feature featureSecondLine">
+                <div class="featureTitle">
+                    <div class="numbers">3</div>
+                    <h3>Everything you need in one place</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, quod. Aliquam
+                    exercitationem obcaecati error! Molestiae minus nostrum quo natus, consequatur blanditiis est.
+                    Mollitia maiores dolorem est placeat modi, nobis tenetur.</p>
+            </div>
         </section>
-        
-        <!-- Mejores del mes -->
+
+        <h2 id="TitleBestOfTheMonth">Best of the month</h2>
         <section id="bestOfTheMonth">
-          <h2>Best of the month</h2>
-          <article>
-              <img src="img/avatar-sanyo.png" alt="profilePictureSanyo">
-              <h4>Sanyo</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident tenetur, libero dolorum at dicta delectus totam culpa nesciunt esse adipisci consectetur voluptatum facilis earum veniam ipsum nisi harum fugit.</p>
-           </article>
-           <article>
-             <img src="img/avatar.lebron.png" alt="profilePictureLebron">
-             <h4>Lebron</h4>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident tenetur, libero dolorum at dicta delectus totam culpa nesciunt esse adipisci consectetur voluptatum facilis earum veniam ipsum nisi harum fugit.</p>
-           </article>
-           <article>
-             <img src="img/avatar-navarro.png" alt="profilePictureNavarro">
-             <h4>Navarro</h4>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident tenetur, libero dolorum at dicta delectus totam culpa nesciunt esse adipisci consectetur voluptatum facilis earum veniam ipsum nisi harum fugit.</p>
-           </article>
-        
-           <button id="moreButton">More</button>
-        
+            <div>
+                <img src="img/avatar-sanyo.png" alt="profilePictureSanyo">
+                <h4>Sanyo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident tenetur, libero dolorum at
+                    dicta delectus totam culpa nesciunt esse adipisci consectetur voluptatum facilis earum veniam ipsum
+                    nisi harum fugit.</p>
+            </div>
+            <div class="hideCard">
+                <img src="img/avatar.lebron.png" alt="profilePictureLebron">
+                <h4>Lebron</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident tenetur, libero dolorum at
+                    dicta delectus totam culpa nesciunt esse adipisci consectetur voluptatum facilis earum veniam ipsum
+                    nisi harum fugit.</p>
+            </div>
+            <div class="hideCard">
+                <img src="img/avatar-navarro.png" alt="profilePictureNavarro">
+                <h4>Navarro</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo provident tenetur, libero dolorum at
+                    dicta delectus totam culpa nesciunt esse adipisci consectetur voluptatum facilis earum veniam ipsum
+                    nisi harum fugit.</p>
+            </div>
+
+            <button id="moreButton">More</button>
+
         </section>
 
         <!-- Pre Foot -->
@@ -102,7 +138,7 @@
             <input type="email" name="email" id="email">
             <button type="submit" id="btnGo">Go</button>
         </form>
-        
+      
         <!-- Navegación Footer -->
         <div>
             <ul class="menuFooter">
@@ -129,14 +165,15 @@
                 <a href="#"><img src="img/icon-pinterest.svg" alt="Pinterest"></a>
                 <a href="#"><img src="img/icon-instagram.svg" alt="Instagram"></a>
             </article>
-            
+          
             <!-- Logo -->
             <img src="img/logoFooter.svg" alt="Sportit" class="logo">
         </section>
 
         <p>Copyright 2020. All Rights Reserved</p>
-        
+
     </footer>
 
 </body>
+
 </html>
