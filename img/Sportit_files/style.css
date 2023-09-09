@@ -32,13 +32,13 @@ header {
 /* Main*/
 
 /* Encabezado principal */
-#containerIntro {
+.containerIntro {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
 
-#containerIntro img {
+.containerIntro img {
     margin: 10px;
     width: 400px;
     height: 341px;
@@ -46,7 +46,7 @@ header {
 
 .contentIntro {
     text-align: right;
-    margin: 60px 0px 20px 25px;
+    margin: 60px 0px 0px 25px;
     width: 400px;
 }
 
@@ -65,21 +65,14 @@ header {
 }
 
 /* Botón Contact */
-.btnContact, #moreButton, #btnGo {
+.btnContact {
+    width: 134px;
+    height: 44px;
     background-color: #8B48BF;
     color: #FFFFFF;
     border: none;
     border-radius: 20px;
     font-size: 13px;
-    cursor: pointer;
-}
-
-.btnContact, #moreButton, #goForIt {
-    width: 134px;
-    height: 44px;
-}
-
-.btnContact, #btnGo {
     font-weight: 500;
 }
 
@@ -89,6 +82,7 @@ header {
     flex-direction: column;
     background-color: #3CDDF3;
     color: #FFFFFF;
+    margin: 20px 0px 20px 0px;
     padding: 20px;
 }
 
@@ -99,103 +93,9 @@ header {
 }
 
 #containerWhat p {
-    margin: 40px 50px 20px 0px;
+    margin: 30px 50px 20px 0px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24.18px;
-}
-
-/* Features Section */
-#featuresSection {
-    padding-top: 60px;
-}
-
-#featuresSection div.feature div.numbers {
-    background-color: #8B48BF;
-    font-weight: 600;
-    display: inline;
-    color: #FFFFFF;
-    padding: 10px 25px;
-    border-radius: 50px;
-
-}
-
-#featuresSection div.feature div.featureTitle {
-    background-color: rgba(139, 72, 191, 0.3);
-    padding: 9px;
-    padding-left: 0px;
-    border-radius: 50px 0px 0px 50px;
-    margin-left: 20px;
-}
-
-#featuresSection div.feature h3 {
-    display: inline;
-    color: #323851;
-    font-size: 16px;
-    margin-left: 10px;
-}
-
-#featuresSection div.feature p {
-    color: #B3B2B7;
-    padding: 28px;
-    font-weight: 500;
-    line-height: 25.52px;
-}
-
-/* Best Of The Month  */
-#TitleBestOfTheMonth {
-    text-align: center;
-    color: #242E53;
-    font-size: 39.21px;
-    padding: 50px;
-}
-
-#bestOfTheMonth img {
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    top: -40px;
-}
-
-#bestOfTheMonth div {
-    margin: 58px 20px 58px 20px;
-    padding: 27px;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-#bestOfTheMonth .hideCard {
-    display: none;
-}
-
-#bestOfTheMonth .hideCard.Lebron {
-    display: flex;
-}
-
-#bestOfTheMonth h4 {
-    padding: 21px 0px 21px 0px;
-    color: #3F4868;
-}
-
-#bestOfTheMonth p {
-    text-align: center;
-    color: #B9B9C1;
-    line-height: 25.06px;
-    font-weight: 500;
-}
-
-#moreButton {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-}
-
-#moreButton:hover, .btnContact:hover , #btnGo:hover {
-    background-color: rgba(139, 72, 191, 0.7);
 }
 
 /* Pre Footer */
@@ -203,7 +103,7 @@ header {
     background-color: #3CDDF3;
     display: flex;
     flex-direction: column;
-    padding: 0px 70px 40px 70px;
+    padding: 40px 70px 40px 70px;
     align-items: center;
 }
 
@@ -212,15 +112,17 @@ header {
     text-align: center;
     line-height: 47.84px;
     font-size: 40px;
-    margin: 40px;
+    width: 393px;
+    height: 96px;
 }
 
 #goForIt {
+    width: 134px;
+    height: 44px;
     background-color: #232C50;
     color: #FFFFFF;
     border: none;
     border-radius: 50px;
-    cursor: pointer;
     box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.25);
 }
 
@@ -262,6 +164,12 @@ form {
 #btnGo {
     width: 63px;
     height: 42px;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 /* Navegación Footer */
@@ -305,7 +213,7 @@ footer div {
     margin: 30px;
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
 
     /* Header */
     header {
@@ -357,20 +265,19 @@ footer div {
     /* Main*/
 
     /* Encabezado principal */
-    #containerIntro {
+    .containerIntro {
         flex-direction: row;
-        justify-content: center;
-        padding: 80px 0px 80px 0px;
-    }    
+        justify-content: space-between;
+        padding: 80px 100px 80px 140px;
+    }
 
-    #containerIntro img {
+    .contentIntro {
+        width: 500px;
+    }
+
+    .containerIntro img {
         width: 540px;
         height: 461px;
-        margin-right: 80px;
-    }
-    
-    .contentIntro, #containerWhat h2 {
-        width: 500px;
     }
 
     /* Container What */
@@ -380,80 +287,28 @@ footer div {
         background-color: #8B48BF;
     }
 
-    #containerWhat h2, #containerWhat p {
+    #containerWhat h2 {
+        width: 500px;
         margin: 40px;
     }
 
     #containerWhat p {
         width: 450px;
-    }
-
-    /* Features Section */
-    #featuresSection {
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 70px;
-        background-color: #FAFAFA;
-    }
-
-    #featuresSection .feature {
-        max-width: 600px;
-        min-width: 370px;
-    }
-
-    #featuresSection .featureFirstLine {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-    }
-
-    #featuresSection div.feature div.featureTitle {
-        background-color: transparent;
-        margin-top: 40px;
-    }
-
-    #featuresSection div.feature p {
-        margin-left: 75px;
-    }
-
-    /* BestOfTheMonth */
-    #TitleBestOfTheMonth {
-        margin-left: 60px;
-    }
-
-    #bestOfTheMonth {
-        display: flex;
-        margin: 0px 50px 0px 50px;
-    }
-
-    #bestOfTheMonth div {
-        margin: 58px 0px 58px 0px;
-    }
-    
-    #bestOfTheMonth .hideCard {
-        display: flex;
-        padding: 27px 10px 27px 10px;
-    }
-
-    #moreButton {
-        margin-bottom: 150px;
+        margin: 40px;
     }
 
     /* Pre Footer */
     #preFoot {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         background-color: #8B48BF;
-        padding: 60px 190px 60px 150px;
     }
 
     #preFoot h2 {
         text-align: left;
+        width: 393px;
         margin: 0px;
-        width: 500px;
+        padding: 0px;
     }
 
     #goForIt {
@@ -461,18 +316,45 @@ footer div {
         background-color: #FFFFFF;
     }
 
+    /* #preFoot {
+        background-color: #3CDDF3;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 70px 40px 70px;
+        align-items: center;
+    }
+    
+    #preFoot h2 {
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 47.84px;
+        font-size: 40px;
+        width: 324px;
+        height: 192px;
+    }
+    
+    #goForIt {
+        width: 134px;
+        height: 44px;
+        background-color: #232C50;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.25);
+    } */
+
     /* Footer */
     footer {
         flex-direction: row-reverse;
         position: relative;
         justify-content: space-around;
-        padding: 50px 75px 50px 75px;
+        padding: 50px 0px 50px 0px;
     }
 
     footer p {
         position: absolute;
-        right: 160px;
-        bottom: 45px;
+        right: 50px;
+        bottom: 40px;
     }
 
     /* Formulario */
@@ -498,9 +380,5 @@ footer div {
     /* Redes */
     .containerRedes a {
         margin: 15px 5px 5px 5px;
-    }
-
-    footer div {
-        width: 392.73px;
     }
 }
